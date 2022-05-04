@@ -36,7 +36,7 @@ func (a Builder) SendMail() error {
 
 	// Setup Headers / body
 	mime := "MIME-version: 1.0;\nContent-Type: text/html; charset=\"UTF-8\";\n"
-	header := "From: noreply@reeduka.fr\nDate: " + t.String() + "\n\n"
+	header := "From: noreply@mail.fr\nDate: " + t.String() + "\n\n"
 	subject := "Subject: Réinitialisation du mot de passe\n"
 	msg := []byte(subject + mime + header + "\n" + bodyhtml)
 
